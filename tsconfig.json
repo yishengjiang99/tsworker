@@ -1,23 +1,10 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
     "module": "commonjs",
-    "target": "esnext",
-    "lib": ["esnext", "webworker"],
-    "alwaysStrict": true,
-    "strict": true,
-    "preserveConstEnums": true,
-    "moduleResolution": "node",
+    "target": "es6",
+    "outDir": "dist",
+    "rootDir": ".",
     "sourceMap": true,
-    "esModuleInterop": true,
-    "types": ["@cloudflare/workers-types"]
-  },
-  "include": [
-    "./src/*.ts",
-    "./test/*.ts",
-    "./src/**/*.ts",
-    "./test/**/*.ts",
-    "./node_modules/@cloudflare/workers-types/index.d.ts"
-  ],
-  "exclude": ["node_modules/", "dist/"]
+    "strict": false
+  }
 }
