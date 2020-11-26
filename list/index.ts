@@ -4,9 +4,8 @@ import {
   BlockBlobClient,
   ContainerClient,
 } from '@azure/storage-blob'
-import { Readable, Transform } from 'stream'
-const AZ_CONN_STR =
-  'DefaultEndpointsProtocol=https;AccountName=grepmusic;AccountKey=OOmiLHvrARhZKbsBA3EF1gZDyqScQbIwk5B7zukyJcbUrSW4pHd08uxME3+QZ6aSIZm2YdLzb8OOqTW1Gow09w==;EndpointSuffix=core.windows.net'
+const AZ_CONN_STR = process.env.az_music_conn
+
 const httpTrigger: AzureFunction = async function (
   context: Context,
   req: HttpRequest,
