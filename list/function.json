@@ -1,0 +1,27 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "blob",
+      "direction": "in",
+      "name": "inputBlob",
+      "path": "midi/files",
+      "connection": "az_music_conn"
+    }
+  ],
+  "scriptFile": "../dist/list/index.js"
+}
